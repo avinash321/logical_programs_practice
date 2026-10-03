@@ -23,9 +23,13 @@ while current:
     print(current.data)
     current = current.next
 
+
+
 def find_middle(head):
-    slow = head.next
-    fast = head.next.next
+    slow = head
+    fast = head
+    slow = slow.next
+    fast = fast.next.next
     while fast and fast.next:
         slow = slow.next
         fast = fast.next.next
